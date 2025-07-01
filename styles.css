@@ -1,0 +1,220 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+.div-global {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-image: url(./imagenes/fondo-catalogo.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding-top: 30px;
+  gap: 20px;
+}
+
+
+.cards-div {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+/* --- Card con efecto flip --- */
+.card-producto {
+    perspective: 1000px;
+    width: 280px;
+    height: 360px;
+    position: relative;
+}
+
+.card-inner {
+    width: 100%;
+    height: 100%;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+    position: relative;
+}
+
+.card-producto.rotar .card-inner {
+    transform: rotateY(180deg);
+}
+
+.card-front,
+.card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 12px;
+    background-color: #fcfcfc;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    border: 1px solid #ddd;
+    overflow: hidden;
+}
+
+.card-back {
+    transform: rotateY(180deg);
+    text-align: center;
+}
+
+/* --- Títulos y texto --- */
+.titulo-catalogo {
+    font-size: 2.5rem;
+    color: #222;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.prod-stock {
+    font-size: 1.1rem;
+    color: #555;
+    font-weight: 400;
+}
+
+.titulo-prod-card {
+    font-size: 1.05rem;
+    color: #333;
+    font-weight: 600;
+    text-align: center;
+    letter-spacing: 0.5px;
+}
+
+.precio-prod-card {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #666;
+    background-color: #f0f0f0;
+    padding: 6px 12px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.card-front:hover .precio-prod-card {
+    background-color: #e2e2e2;
+}
+
+.img-prod-card {
+    height: 180px;
+    width: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    transition: transform 0.3s ease;
+}
+
+.card-front:hover .img-prod-card {
+    transform: scale(1.05);
+}
+
+/* --- Botones sobrios --- */
+.btn-info,
+.btn-volver {
+    padding: 8px 16px;
+    background-color: #333; /* gris oscuro elegante */
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 0.85rem;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    letter-spacing: 0.5px;
+}
+
+.btn-info:hover,
+.btn-volver:hover {
+    background-color: #000;
+    transform: scale(1.03);
+}
+
+.info-detalle {
+    font-size: 0.95rem;
+    color: #444;
+    line-height: 1.5;
+}
+
+.footer {
+  background-color: #1e1e1e;
+  color: #f2f2f2;
+  padding: 40px 20px 20px;
+  width: 100%;
+  font-size: 0.95rem;
+  margin-bottom: 0;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.footer-section {
+  flex: 1 1 250px;
+}
+
+.footer-title {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.footer-subtitle {
+  font-size: 1.1rem;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #dddddd;
+}
+
+.footer-text {
+  margin-bottom: 6px;
+  color: #cccccc;
+  line-height: 1.5;
+}
+
+.footer-socials {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.footer-link {
+  color: #aaaaaa;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-link:hover {
+  color: #ffffff;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding-top: 20px;
+  border-top: 1px solid #444;
+  margin-top: 30px;
+}
+
+.footer-copy {
+  color: #888888;
+  font-size: 0.85rem;
+}

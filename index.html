@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="div-global">
+    <h1 class="titulo-catalogo">Catálogo HELM</h1>
+    <h2 class="prod-stock">Productos en stock inmediato</h2>
+    <div class="cards-div">
+        <div class="card-producto">
+  <div class="card-inner">
+    <div class="card-front">
+      <h2 class="titulo-prod-card">Anillo de Plata</h2>
+      <p class="precio-prod-card">$12.000</p>
+      <img src="./imagenes/img-1.jpg" alt="" class="img-prod-card">
+      <button class="btn-info">Más información</button>
+    </div>
+    <div class="card-back">
+      <p class="info-detalle">
+        Hecho a mano con plata 925. Ideal para eventos formales y regalos especiales. Stock limitado.
+      </p>
+      <button class="btn-volver">Volver</button>
+    </div>
+  </div>
+</div>
+
+        <div class="card-producto">
+  <div class="card-inner">
+    <div class="card-front">
+      <h2 class="titulo-prod-card">Anillo de Plata</h2>
+      <p class="precio-prod-card">$12.000</p>
+      <img src="./imagenes/img-2.jpg" alt="" class="img-prod-card">
+      <button class="btn-info">Más información</button>
+    </div>
+    <div class="card-back">
+      <p class="info-detalle">
+        Hecho con plata 925 de alta pureza. Diseño exclusivo artesanal.
+      </p>
+      <button class="btn-volver">Volver</button>
+    </div>
+  </div>
+</div>
+
+<div class="card-producto">
+  <div class="card-inner">
+    <div class="card-front">
+      <h2 class="titulo-prod-card">Anillo de Plata</h2>
+      <p class="precio-prod-card">$12.000</p>
+      <img src="./imagenes/img-3.jpg" alt="" class="img-prod-card">
+      <button class="btn-info">Más información</button>
+    </div>
+    <div class="card-back">
+      <p class="info-detalle">
+        Hecho con plata 925 de alta pureza. Diseño exclusivo artesanal.
+      </p>
+      <button class="btn-volver">Volver</button>
+    </div>
+  </div>
+</div>
+
+<div class="card-producto">
+  <div class="card-inner">
+    <div class="card-front">
+      <h2 class="titulo-prod-card">Anillo de Plata</h2>
+      <p class="precio-prod-card">$12.000</p>
+      <img src="./imagenes/img-4.jpg" alt="" class="img-prod-card">
+      <button class="btn-info">Más información</button>
+    </div>
+    <div class="card-back">
+      <p class="info-detalle">
+        Hecho con plata 925 de alta pureza. Diseño exclusivo artesanal.
+      </p>
+      <button class="btn-volver">Volver</button>
+    </div>
+  </div>
+</div>
+
+<div class="card-producto">
+  <div class="card-inner">
+    <div class="card-front">
+      <h2 class="titulo-prod-card">Anillo de Plata</h2>
+      <p class="precio-prod-card">$12.000</p>
+      <img src="./imagenes/img-5.jpg" alt="" class="img-prod-card">
+      <button class="btn-info">Más información</button>
+    </div>
+    <div class="card-back">
+      <p class="info-detalle">
+        Hecho con plata 925 de alta pureza. Diseño exclusivo artesanal.
+      </p>
+      <button class="btn-volver">Volver</button>
+    </div>
+  </div>
+</div>
+
+<div class="card-producto">
+  <div class="card-inner">
+    <div class="card-front">
+      <h2 class="titulo-prod-card">Anillo de Plata</h2>
+      <p class="precio-prod-card">$12.000</p>
+      <img src="./imagenes/img-6.jpg" alt="" class="img-prod-card">
+      <button class="btn-info">Más información</button>
+    </div>
+    <div class="card-back">
+      <p class="info-detalle">
+        Hecho con plata 925 de alta pureza. Diseño exclusivo artesanal.
+      </p>
+      <button class="btn-volver">Volver</button>
+    </div>
+  </div>
+</div>
+
+
+</div>
+</div>
+<footer class="footer">
+  <div class="footer-container">
+    <div class="footer-section">
+      <h3 class="footer-title">HELM Joyas</h3>
+      <p class="footer-text">Accesorios únicos con elegancia y estilo. Calidad garantizada en cada pieza.</p>
+    </div>
+
+    <div class="footer-section">
+      <h4 class="footer-subtitle">Contacto</h4>
+      <p class="footer-text">Email: contacto@helmjoyas.com</p>
+      <p class="footer-text">Tel: +54 11 5555-5555</p>
+    </div>
+
+    <div class="footer-section">
+      <h4 class="footer-subtitle">Redes Sociales</h4>
+      <div class="footer-socials">
+        <a href="#" class="footer-link">Instagram</a>
+        <a href="#" class="footer-link">Facebook</a>
+        <a href="#" class="footer-link">Whatsapp</a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p class="footer-copy">© 2025 HELM Joyas. Todos los derechos reservados.</p>
+  </div>
+</footer>
+    
+
+    <script>
+    document.querySelectorAll('.btn-info').forEach(button => {
+        button.addEventListener('click', () => {
+            button.closest('.card-producto').classList.add('rotar');
+        });
+    });
+
+    document.querySelectorAll('.btn-volver').forEach(button => {
+        button.addEventListener('click', () => {
+            button.closest('.card-producto').classList.remove('rotar');
+        });
+    });
+</script>
+
+</body>
+</html>
