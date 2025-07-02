@@ -32,8 +32,8 @@
 /* --- Card con efecto flip --- */
 .card-producto {
     perspective: 1000px;
-    width: 280px;
-    height: 360px;
+    width: 340px;
+    height: 380px;
     position: relative;
 }
 
