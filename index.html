@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <title>Document</title>
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -10,103 +11,402 @@
     <div class="div-global">
     <h1 class="titulo-catalogo">Catálogo HELM</h1>
     <h2 class="prod-stock">Productos en stock inmediato</h2>
+    
+  <div class="filtro-dropdown">
+  <button class="dropdown-toggle">Filtrar por categoría ▾</button>
+  <div class="dropdown-menu">
+    <button class="filtro-btn" data-filter="Todos">Todos</button>
+    <button class="filtro-btn" data-filter="Aros">Aros</button>
+    <button class="filtro-btn" data-filter="Pulseras">Pulseras</button>
+    <button class="filtro-btn" data-filter="Collares">Collares</button>
+  </div>
+</div>
+
+
     <div class="cards-div">
-        <div class="card-producto">
+        <div class="card-producto" data-category="Collares">
   <div class="card-inner">
     <div class="card-front">
-      <h2 class="titulo-prod-card">Anillo de Plata</h2>
-      <p class="precio-prod-card">$12.000</p>
+      <h2 class="titulo-prod-card">Collar tanza con dije óvalo</h2>
+      <p class="precio-prod-card">$11.800</p>
       <img src="./imagenes/img-1.jpg" alt="" class="img-prod-card">
       <button class="btn-info">Más información</button>
     </div>
     <div class="card-back">
       <p class="info-detalle">
-        Hecho a mano con plata 925. Ideal para eventos formales y regalos especiales. Stock limitado.
+        Dije de acero dorado.
       </p>
       <button class="btn-volver">Volver</button>
     </div>
   </div>
 </div>
 
-        <div class="card-producto">
+        <div class="card-producto" data-category="Aros">
   <div class="card-inner">
     <div class="card-front">
-      <h2 class="titulo-prod-card">Anillo de Plata</h2>
-      <p class="precio-prod-card">$12.000</p>
+      <h2 class="titulo-prod-card">Aros dorados rodinados</h2>
+      <p class="precio-prod-card">$6.300</p>
       <img src="./imagenes/img-2.jpg" alt="" class="img-prod-card">
       <button class="btn-info">Más información</button>
     </div>
     <div class="card-back">
       <p class="info-detalle">
-        Hecho con plata 925 de alta pureza. Diseño exclusivo artesanal.
+        Consultar modelos disponibles.
       </p>
       <button class="btn-volver">Volver</button>
     </div>
   </div>
 </div>
 
-<div class="card-producto">
+<div class="card-producto" data-category="Pulseras">
   <div class="card-inner">
     <div class="card-front">
-      <h2 class="titulo-prod-card">Anillo de Plata</h2>
+      <h2 class="titulo-prod-card">Pulsera doble regulable</h2>
       <p class="precio-prod-card">$12.000</p>
       <img src="./imagenes/img-3.jpg" alt="" class="img-prod-card">
       <button class="btn-info">Más información</button>
     </div>
     <div class="card-back">
       <p class="info-detalle">
-        Hecho con plata 925 de alta pureza. Diseño exclusivo artesanal.
+        *Acero blanco.
+      </p>
+      <p class="info-detalle">
+        *Dije rosa.
       </p>
       <button class="btn-volver">Volver</button>
     </div>
   </div>
 </div>
 
-<div class="card-producto">
+<div class="card-producto" data-category="Collares">
   <div class="card-inner">
     <div class="card-front">
-      <h2 class="titulo-prod-card">Anillo de Plata</h2>
-      <p class="precio-prod-card">$12.000</p>
+      <h2 class="titulo-prod-card">Collar con dije corazón.</h2>
+      <p class="precio-prod-card">$13.000</p>
       <img src="./imagenes/img-4.jpg" alt="" class="img-prod-card">
       <button class="btn-info">Más información</button>
     </div>
     <div class="card-back">
       <p class="info-detalle">
-        Hecho con plata 925 de alta pureza. Diseño exclusivo artesanal.
+        Acero dorado.
       </p>
       <button class="btn-volver">Volver</button>
     </div>
   </div>
 </div>
 
-<div class="card-producto">
+<div class="card-producto" data-category="Collares">
   <div class="card-inner">
     <div class="card-front">
-      <h2 class="titulo-prod-card">Anillo de Plata</h2>
-      <p class="precio-prod-card">$12.000</p>
+      <h2 class="titulo-prod-card">Collar dije trebol</h2>
+      <p class="precio-prod-card">$9.500</p>
       <img src="./imagenes/img-5.jpg" alt="" class="img-prod-card">
       <button class="btn-info">Más información</button>
     </div>
     <div class="card-back">
       <p class="info-detalle">
-        Hecho con plata 925 de alta pureza. Diseño exclusivo artesanal.
+        Acero blanco.
       </p>
       <button class="btn-volver">Volver</button>
     </div>
   </div>
 </div>
 
-<div class="card-producto">
+<div class="card-producto" data-category="Pulseras">
   <div class="card-inner">
     <div class="card-front">
-      <h2 class="titulo-prod-card">Anillo de Plata</h2>
-      <p class="precio-prod-card">$12.000</p>
+      <h2 class="titulo-prod-card">Pulsera con dije diamante</h2>
+      <p class="precio-prod-card">$9.200</p>
       <img src="./imagenes/img-6.jpg" alt="" class="img-prod-card">
       <button class="btn-info">Más información</button>
     </div>
     <div class="card-back">
       <p class="info-detalle">
-        Hecho con plata 925 de alta pureza. Diseño exclusivo artesanal.
+        Acero blanco.
+      </p>
+      <button class="btn-volver">Volver</button>
+    </div>
+  </div>
+</div>
+
+<div class="card-producto" data-category="Pulseras">
+  <div class="card-inner">
+    <div class="card-front">
+      <h2 class="titulo-prod-card">Pulsera doble cadena con esfera</h2>
+      <p class="precio-prod-card">$7.500</p>
+      <img src="./imagenes/img-7.jpg" alt="" class="img-prod-card">
+      <button class="btn-info">Más información</button>
+    </div>
+    <div class="card-back">
+      <p class="info-detalle">
+        Acero blanco.
+      </p>
+      <button class="btn-volver">Volver</button>
+    </div>
+  </div>
+</div>
+
+<div class="card-producto" data-category="Collares">
+  <div class="card-inner">
+    <div class="card-front">
+      <h2 class="titulo-prod-card">Collar con dije trebol</h2>
+      <p class="precio-prod-card">$10.500</p>
+      <img src="./imagenes/img-8.jpg" alt="" class="img-prod-card">
+      <button class="btn-info">Más información</button>
+    </div>
+    <div class="card-back">
+      <p class="info-detalle">
+        Acero blanco.
+      </p>
+      <button class="btn-volver">Volver</button>
+    </div>
+  </div>
+</div>
+
+<div class="card-producto" data-category="Pulseras">
+  <div class="card-inner">
+    <div class="card-front">
+      <h2 class="titulo-prod-card">Pulsera con mini dijes</h2>
+      <p class="precio-prod-card">$11.600</p>
+      <img src="./imagenes/img-9.jpg" alt="" class="img-prod-card">
+      <button class="btn-info">Más información</button>
+    </div>
+    <div class="card-back">
+      <p class="info-detalle">
+        Acero dorado.
+      </p>
+      <button class="btn-volver">Volver</button>
+    </div>
+  </div>
+</div>
+
+<div class="card-producto" data-category="Aros">
+  <div class="card-inner">
+    <div class="card-front">
+      <h2 class="titulo-prod-card">Aros trebol con brillo</h2>
+      <p class="precio-prod-card">$10.400</p>
+      <img src="./imagenes/img-10.jpg" alt="" class="img-prod-card">
+      <button class="btn-info">Más información</button>
+    </div>
+    <div class="card-back">
+      <p class="info-detalle">
+        Acero blanco.
+      </p>
+      <button class="btn-volver">Volver</button>
+    </div>
+  </div>
+</div>
+
+<div class="card-producto" data-category="Collares">
+  <div class="card-inner">
+    <div class="card-front">
+      <h2 class="titulo-prod-card">Collar tanza con dije gota</h2>
+      <p class="precio-prod-card">$11.800</p>
+      <img src="./imagenes/img-11.jpg" alt="" class="img-prod-card">
+      <button class="btn-info">Más información</button>
+    </div>
+    <div class="card-back">
+      <p class="info-detalle">
+        Dije de acero dorado.
+      </p>
+      <button class="btn-volver">Volver</button>
+    </div>
+  </div>
+</div>
+
+<div class="card-producto" data-category="Collares">
+  <div class="card-inner">
+    <div class="card-front">
+      <h2 class="titulo-prod-card">Collar broche reasa</h2>
+      <p class="precio-prod-card">$8.000</p>
+      <img src="./imagenes/img-12.jpg" alt="" class="img-prod-card">
+      <button class="btn-info">Más información</button>
+    </div>
+    <div class="card-back">
+      <p class="info-detalle">
+        Dije y cadena de acero blanco.
+      </p>
+      <button class="btn-volver">Volver</button>
+    </div>
+  </div>
+</div>
+
+<div class="card-producto" data-category="Collares">
+  <div class="card-inner">
+    <div class="card-front">
+      <h2 class="titulo-prod-card">Collar doble cadena</h2>
+      <p class="precio-prod-card">$11.000</p>
+      <img src="./imagenes/img-13.jpg" alt="" class="img-prod-card">
+      <button class="btn-info">Más información</button>
+    </div>
+    <div class="card-back">
+      <p class="info-detalle">
+        *Dije corazón.
+      </p>
+      <p class="info-detalle">
+        *Acero blanco.
+      </p>
+      <button class="btn-volver">Volver</button>
+    </div>
+  </div>
+</div>
+
+<div class="card-producto" data-category="Pulseras">
+  <div class="card-inner">
+    <div class="card-front">
+      <h2 class="titulo-prod-card">Pulsera corazones</h2>
+      <p class="precio-prod-card">$6.400</p>
+      <img src="./imagenes/img-14.jpg" alt="" class="img-prod-card">
+      <button class="btn-info">Más información</button>
+    </div>
+    <div class="card-back">
+      <p class="info-detalle">
+        Acero dorado.
+      </p>
+      <button class="btn-volver">Volver</button>
+    </div>
+  </div>
+</div>
+
+<div class="card-producto" data-category="Collares">
+  <div class="card-inner">
+    <div class="card-front">
+      <h2 class="titulo-prod-card">Collar tanza con dije corazón</h2>
+      <p class="precio-prod-card">$5.000</p>
+      <img src="./imagenes/img-15.jpg" alt="" class="img-prod-card">
+      <button class="btn-info">Más información</button>
+    </div>
+    <div class="card-back">
+      <p class="info-detalle">
+        Sin detalles.
+      </p>
+      <button class="btn-volver">Volver</button>
+    </div>
+  </div>
+</div>
+
+<div class="card-producto" data-category="Pulseras">
+  <div class="card-inner">
+    <div class="card-front">
+      <h2 class="titulo-prod-card">Pulsera con dijes pequeños</h2>
+      <p class="precio-prod-card">$5.000</p>
+      <img src="./imagenes/img-16.jpg" alt="" class="img-prod-card">
+      <button class="btn-info">Más información</button>
+    </div>
+    <div class="card-back">
+      <p class="info-detalle">
+        Acero blanco.
+      </p>
+      <button class="btn-volver">Volver</button>
+    </div>
+  </div>
+</div>
+
+<div class="card-producto" data-category="Pulseras">
+  <div class="card-inner">
+    <div class="card-front">
+      <h2 class="titulo-prod-card">Pulsera con dije rombo</h2>
+      <p class="precio-prod-card">$6.900</p>
+      <img src="./imagenes/img-17.jpg" alt="" class="img-prod-card">
+      <button class="btn-info">Más información</button>
+    </div>
+    <div class="card-back">
+      <p class="info-detalle">
+        Acero blanco.
+      </p>
+      <button class="btn-volver">Volver</button>
+    </div>
+  </div>
+</div>
+
+<div class="card-producto" data-category="Collares">
+  <div class="card-inner">
+    <div class="card-front">
+      <h2 class="titulo-prod-card">Gargantilla moño</h2>
+      <p class="precio-prod-card">$5.500</p>
+      <img src="./imagenes/img-18.jpg" alt="" class="img-prod-card">
+      <button class="btn-info">Más información</button>
+    </div>
+    <div class="card-back">
+      <p class="info-detalle">
+        Acero blanco.
+      </p>
+      <button class="btn-volver">Volver</button>
+    </div>
+  </div>
+</div>
+
+<div class="card-producto" data-category="Collares">
+  <div class="card-inner">
+    <div class="card-front">
+      <h2 class="titulo-prod-card">Collar tanza con dije cubo</h2>
+      <p class="precio-prod-card">$5.000</p>
+      <img src="./imagenes/img-19.jpg" alt="" class="img-prod-card">
+      <button class="btn-info">Más información</button>
+    </div>
+    <div class="card-back">
+      <p class="info-detalle">
+        Sin detalles.
+      </p>
+      <button class="btn-volver">Volver</button>
+    </div>
+  </div>
+</div>
+
+<div class="card-producto" data-category="Pulseras">
+  <div class="card-inner">
+    <div class="card-front">
+      <h2 class="titulo-prod-card">Pulsera mariposas</h2>
+      <p class="precio-prod-card">$12.000</p>
+      <img src="./imagenes/img-20.jpg" alt="" class="img-prod-card">
+      <button class="btn-info">Más información</button>
+    </div>
+    <div class="card-back">
+      <p class="info-detalle">
+        Acero blanco.
+      </p>
+      <button class="btn-volver">Volver</button>
+    </div>
+  </div>
+</div>
+
+<div class="card-producto" data-category="Collares">
+  <div class="card-inner">
+    <div class="card-front">
+      <h2 class="titulo-prod-card">Collar dije serpiente con brillo</h2>
+      <p class="precio-prod-card">$13.000</p>
+      <img src="./imagenes/img-21.jpg" alt="" class="img-prod-card">
+      <button class="btn-info">Más información</button>
+    </div>
+    <div class="card-back">
+      <p class="info-detalle">
+        Dije y cadena de acero blanco.
+      </p>
+      <button class="btn-volver">Volver</button>
+    </div>
+  </div>
+</div>
+
+<div class="card-producto" data-category="Collares">
+  <div class="card-inner">
+    <div class="card-front">
+      <h2 class="titulo-prod-card">Collar con dije giratorio</h2>
+      <p class="precio-prod-card">$13.000</p>
+      <img src="./imagenes/img-22.jpg" alt="" class="img-prod-card">
+      <button class="btn-info">Más información</button>
+    </div>
+    <div class="card-back">
+      <p class="info-detalle">
+        Consultar modelos disponibles.
+      </p>
+      <p class="info-detalle">
+        *Acero blanco.
+      </p>
+      <p class="info-detalle">
+        *Acero dorado.
+      </p>
+      <p class="info-detalle">
+        *Acero quirúrgico.
       </p>
       <button class="btn-volver">Volver</button>
     </div>
@@ -120,21 +420,31 @@
   <div class="footer-container">
     <div class="footer-section">
       <h3 class="footer-title">HELM Joyas</h3>
-      <p class="footer-text">Accesorios únicos con elegancia y estilo. Calidad garantizada en cada pieza.</p>
+      <p class="footer-text">
+        <i class="fas fa-gem"></i>
+        Accesorios únicos con elegancia y estilo. Calidad garantizada en cada pieza.
+      </p>
     </div>
 
     <div class="footer-section">
       <h4 class="footer-subtitle">Contacto</h4>
-      <p class="footer-text">Email: contacto@helmjoyas.com</p>
-      <p class="footer-text">Tel: +54 11 5555-5555</p>
+      <p class="footer-text">
+        <i class="fas fa-phone-alt"></i> Tel: 2477601935
+      </p>
+      <p class="footer-text">
+        <i class="fas fa-envelope"></i> Mail: helm.pergamino@gmail.com
+      </p>
     </div>
 
     <div class="footer-section">
       <h4 class="footer-subtitle">Redes Sociales</h4>
       <div class="footer-socials">
-        <a href="#" class="footer-link">Instagram</a>
-        <a href="#" class="footer-link">Facebook</a>
-        <a href="#" class="footer-link">Whatsapp</a>
+        <a href="https://www.instagram.com/helm.joyas/" class="footer-link" target="_blank">
+          <i class="fab fa-instagram"></i> Instagram
+        </a>
+        <a href="https://wa.me/2477601935?text=Hola%21%20tengo%20una%20consulta%20sobre%20un%20producto%20del%20catálogo." class="footer-link" target="_blank">
+          <i class="fab fa-whatsapp"></i> Whatsapp
+        </a>
       </div>
     </div>
   </div>
@@ -142,21 +452,67 @@
     <p class="footer-copy">© 2025 HELM Joyas. Todos los derechos reservados.</p>
   </div>
 </footer>
+
     
 
     <script>
-    document.querySelectorAll('.btn-info').forEach(button => {
-        button.addEventListener('click', () => {
-            button.closest('.card-producto').classList.add('rotar');
-        });
+  // Rotar card al presionar "Más información"
+  document.querySelectorAll('.btn-info').forEach(button => {
+    button.addEventListener('click', () => {
+      button.closest('.card-producto').classList.add('rotar');
     });
+  });
 
-    document.querySelectorAll('.btn-volver').forEach(button => {
-        button.addEventListener('click', () => {
-            button.closest('.card-producto').classList.remove('rotar');
-        });
+  // Volver card al presionar "Volver"
+  document.querySelectorAll('.btn-volver').forEach(button => {
+    button.addEventListener('click', () => {
+      button.closest('.card-producto').classList.remove('rotar');
     });
+  });
+
+  // Mostrar/ocultar menú desplegable
+  const dropdown = document.querySelector('.filtro-dropdown');
+  const toggleBtn = document.querySelector('.dropdown-toggle');
+  const dropdownMenu = document.querySelector('.dropdown-menu');
+
+  toggleBtn.addEventListener('click', () => {
+    dropdown.classList.toggle('active');
+  });
+
+  // Cerrar el dropdown al hacer clic fuera
+  document.addEventListener('click', (e) => {
+    if (!dropdown.contains(e.target)) {
+      dropdown.classList.remove('active');
+    }
+  });
+
+  // Filtrar productos por categoría
+  const filtroBtns = document.querySelectorAll('.filtro-btn');
+  const productos = document.querySelectorAll('.card-producto');
+
+  filtroBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const filtro = btn.getAttribute('data-filter');
+      productos.forEach(producto => {
+        const categoria = producto.getAttribute('data-category');
+        if (filtro === 'Todos' || categoria === filtro) {
+          producto.style.display = 'block';
+        } else {
+          producto.style.display = 'none';
+        }
+      });
+
+      // Cerrar el menú después de seleccionar
+      dropdown.classList.remove('active');
+    });
+  });
 </script>
 
+
+
 </body>
+<!-- Botón flotante de WhatsApp con mensaje -->
+<a href="https://wa.me/2477601935?text=Hola%21%20tengo%20una%20consulta%20sobre%20un%20producto%20del%20catálogo." class="whatsapp-button" target="_blank" aria-label="Chat en WhatsApp">
+    <img src="https://cdn.jsdelivr.net/gh/edent/SuperTinyIcons/images/svg/whatsapp.svg" alt="WhatsApp" />
+  </a>
 </html>

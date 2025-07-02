@@ -71,6 +71,7 @@
 .card-back {
     transform: rotateY(180deg);
     text-align: center;
+    justify-content: center;
 }
 
 /* --- Títulos y texto --- */
@@ -217,4 +218,89 @@
 .footer-copy {
   color: #888888;
   font-size: 0.85rem;
+}
+
+/*BOTON DE WSP*/
+
+.whatsapp-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+  width: 60px;
+  height: 60px;
+  background-color: #25D366;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  transition: transform 0.3s;
+}
+.whatsapp-button img {
+  width: 30px;
+  height: 30px;
+}
+.whatsapp-button:hover {
+  transform: scale(1.1);
+}
+
+/* Dropdown contenedor */
+.filtro-dropdown {
+  position: relative;
+  width: fit-content;
+  margin: 20px auto;
+  text-align: center;
+}
+
+/* Botón principal del dropdown */
+.dropdown-toggle {
+  background-color: #000;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.dropdown-toggle:hover {
+  background-color: #333;
+}
+
+/* Menú desplegable oculto por defecto */
+.dropdown-menu {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  top: 110%;
+  left: 0;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  z-index: 10;
+  width: 100%;
+}
+
+/* Botones dentro del dropdown */
+.filtro-btn {
+  background-color: transparent;
+  color: #000;
+  border: none;
+  padding: 10px 15px;
+  text-align: left;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  font-size: 15px;
+}
+
+.filtro-btn:hover {
+  background-color: #f0f0f0;
+}
+
+/* Mostrar el menú al activar */
+.filtro-dropdown.active .dropdown-menu {
+  display: flex;
 }
