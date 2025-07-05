@@ -28,6 +28,13 @@
 <meta property="og:locale" content="es_AR" />
 
 </head>
+
+<!-- Modal para mostrar la imagen ampliada -->
+<div id="image-modal" class="modal">
+  <span class="close-btn">&times;</span>
+  <img class="modal-content" id="modal-img">
+</div>
+
 <body>
     <div class="div-global">
     <h1 class="titulo-catalogo">Catálogo HELM</h1>
@@ -49,8 +56,8 @@
   <div class="card-inner">
     <div class="card-front">
       <h2 class="titulo-prod-card">Collar tanza con dije óvalo</h2>
-      <p class="precio-prod-card">$11.800</p>
       <img src="./imagenes/img-1.jpg" alt="" class="img-prod-card">
+      <p class="precio-prod-card">$11.800</p>
       <button class="btn-info">Más información</button>
     </div>
     <div class="card-back">
@@ -66,8 +73,8 @@
   <div class="card-inner">
     <div class="card-front">
       <h2 class="titulo-prod-card">Aros dorados rodinados</h2>
-      <p class="precio-prod-card">$6.300</p>
       <img src="./imagenes/img-2.jpg" alt="" class="img-prod-card">
+      <p class="precio-prod-card">$6.300</p>
       <button class="btn-info">Más información</button>
     </div>
     <div class="card-back">
@@ -79,32 +86,12 @@
   </div>
 </div>
 
-<div class="card-producto" data-category="Pulseras">
-  <div class="card-inner">
-    <div class="card-front">
-      <h2 class="titulo-prod-card">Pulsera doble regulable</h2>
-      <p class="precio-prod-card">$12.000</p>
-      <img src="./imagenes/img-3.jpg" alt="" class="img-prod-card">
-      <button class="btn-info">Más información</button>
-    </div>
-    <div class="card-back">
-      <p class="info-detalle">
-        *Acero blanco.
-      </p>
-      <p class="info-detalle">
-        *Dije rosa.
-      </p>
-      <button class="btn-volver">Volver</button>
-    </div>
-  </div>
-</div>
-
 <div class="card-producto" data-category="Collares">
   <div class="card-inner">
     <div class="card-front">
       <h2 class="titulo-prod-card">Collar con dije corazón</h2>
-      <p class="precio-prod-card">$13.000</p>
       <img src="./imagenes/img-4.jpg" alt="" class="img-prod-card">
+      <p class="precio-prod-card">$13.000</p>
       <button class="btn-info">Más información</button>
     </div>
     <div class="card-back">
@@ -120,8 +107,8 @@
   <div class="card-inner">
     <div class="card-front">
       <h2 class="titulo-prod-card">Collar dije trebol</h2>
-      <p class="precio-prod-card">$9.500</p>
       <img src="./imagenes/img-5.jpg" alt="" class="img-prod-card">
+      <p class="precio-prod-card">$9.500</p>
       <button class="btn-info">Más información</button>
     </div>
     <div class="card-back">
@@ -137,8 +124,8 @@
   <div class="card-inner">
     <div class="card-front">
       <h2 class="titulo-prod-card">Pulsera con dije diamante</h2>
-      <p class="precio-prod-card">$9.200</p>
       <img src="./imagenes/img-6.jpg" alt="" class="img-prod-card">
+      <p class="precio-prod-card">$9.200</p>
       <button class="btn-info">Más información</button>
     </div>
     <div class="card-back">
@@ -154,47 +141,13 @@
   <div class="card-inner">
     <div class="card-front">
       <h2 class="titulo-prod-card">Pulsera doble cadena con esfera</h2>
-      <p class="precio-prod-card">$7.500</p>
       <img src="./imagenes/img-7.jpg" alt="" class="img-prod-card">
+      <p class="precio-prod-card">$7.500</p>
       <button class="btn-info">Más información</button>
     </div>
     <div class="card-back">
       <p class="info-detalle">
         Acero blanco.
-      </p>
-      <button class="btn-volver">Volver</button>
-    </div>
-  </div>
-</div>
-
-<div class="card-producto" data-category="Collares">
-  <div class="card-inner">
-    <div class="card-front">
-      <h2 class="titulo-prod-card">Collar con dije trebol</h2>
-      <p class="precio-prod-card">$10.500</p>
-      <img src="./imagenes/img-8.jpg" alt="" class="img-prod-card">
-      <button class="btn-info">Más información</button>
-    </div>
-    <div class="card-back">
-      <p class="info-detalle">
-        Acero blanco.
-      </p>
-      <button class="btn-volver">Volver</button>
-    </div>
-  </div>
-</div>
-
-<div class="card-producto" data-category="Pulseras">
-  <div class="card-inner">
-    <div class="card-front">
-      <h2 class="titulo-prod-card">Pulsera con mini dijes</h2>
-      <p class="precio-prod-card">$11.600</p>
-      <img src="./imagenes/img-9.jpg" alt="" class="img-prod-card">
-      <button class="btn-info">Más información</button>
-    </div>
-    <div class="card-back">
-      <p class="info-detalle">
-        Acero dorado.
       </p>
       <button class="btn-volver">Volver</button>
     </div>
@@ -205,8 +158,8 @@
   <div class="card-inner">
     <div class="card-front">
       <h2 class="titulo-prod-card">Aros trebol con brillo</h2>
-      <p class="precio-prod-card">$10.400</p>
       <img src="./imagenes/img-10.jpg" alt="" class="img-prod-card">
+      <p class="precio-prod-card">$10.400</p>
       <button class="btn-info">Más información</button>
     </div>
     <div class="card-back">
@@ -222,8 +175,8 @@
   <div class="card-inner">
     <div class="card-front">
       <h2 class="titulo-prod-card">Collar tanza con dije gota</h2>
-      <p class="precio-prod-card">$11.800</p>
       <img src="./imagenes/img-11.jpg" alt="" class="img-prod-card">
+      <p class="precio-prod-card">$11.800</p>
       <button class="btn-info">Más información</button>
     </div>
     <div class="card-back">
@@ -239,8 +192,8 @@
   <div class="card-inner">
     <div class="card-front">
       <h2 class="titulo-prod-card">Collar broche reasa</h2>
-      <p class="precio-prod-card">$8.000</p>
       <img src="./imagenes/img-12.jpg" alt="" class="img-prod-card">
+      <p class="precio-prod-card">$8.000</p>
       <button class="btn-info">Más información</button>
     </div>
     <div class="card-back">
@@ -256,8 +209,8 @@
   <div class="card-inner">
     <div class="card-front">
       <h2 class="titulo-prod-card">Collar doble cadena</h2>
-      <p class="precio-prod-card">$11.000</p>
       <img src="./imagenes/img-13.jpg" alt="" class="img-prod-card">
+      <p class="precio-prod-card">$11.000</p>
       <button class="btn-info">Más información</button>
     </div>
     <div class="card-back">
@@ -276,8 +229,8 @@
   <div class="card-inner">
     <div class="card-front">
       <h2 class="titulo-prod-card">Pulsera corazones</h2>
-      <p class="precio-prod-card">$6.400</p>
       <img src="./imagenes/img-14.jpg" alt="" class="img-prod-card">
+      <p class="precio-prod-card">$6.400</p>
       <button class="btn-info">Más información</button>
     </div>
     <div class="card-back">
@@ -293,8 +246,8 @@
   <div class="card-inner">
     <div class="card-front">
       <h2 class="titulo-prod-card">Collar tanza con dije corazón</h2>
-      <p class="precio-prod-card">$5.000</p>
       <img src="./imagenes/img-15.jpg" alt="" class="img-prod-card">
+      <p class="precio-prod-card">$5.000</p>
       <button class="btn-info">Más información</button>
     </div>
     <div class="card-back">
@@ -310,8 +263,8 @@
   <div class="card-inner">
     <div class="card-front">
       <h2 class="titulo-prod-card">Pulsera con dijes pequeños</h2>
-      <p class="precio-prod-card">$5.000</p>
       <img src="./imagenes/img-16.jpg" alt="" class="img-prod-card">
+      <p class="precio-prod-card">$5.000</p>
       <button class="btn-info">Más información</button>
     </div>
     <div class="card-back">
@@ -327,8 +280,8 @@
   <div class="card-inner">
     <div class="card-front">
       <h2 class="titulo-prod-card">Pulsera con dije rombo</h2>
-      <p class="precio-prod-card">$6.900</p>
       <img src="./imagenes/img-17.jpg" alt="" class="img-prod-card">
+      <p class="precio-prod-card">$6.900</p>
       <button class="btn-info">Más información</button>
     </div>
     <div class="card-back">
@@ -344,8 +297,8 @@
   <div class="card-inner">
     <div class="card-front">
       <h2 class="titulo-prod-card">Gargantilla moño</h2>
-      <p class="precio-prod-card">$5.500</p>
       <img src="./imagenes/img-18.jpg" alt="" class="img-prod-card">
+      <p class="precio-prod-card">$5.500</p>
       <button class="btn-info">Más información</button>
     </div>
     <div class="card-back">
@@ -361,8 +314,8 @@
   <div class="card-inner">
     <div class="card-front">
       <h2 class="titulo-prod-card">Collar tanza con dije cubo</h2>
-      <p class="precio-prod-card">$5.000</p>
       <img src="./imagenes/img-19.jpg" alt="" class="img-prod-card">
+      <p class="precio-prod-card">$5.000</p>
       <button class="btn-info">Más información</button>
     </div>
     <div class="card-back">
@@ -374,29 +327,12 @@
   </div>
 </div>
 
-<div class="card-producto" data-category="Pulseras">
-  <div class="card-inner">
-    <div class="card-front">
-      <h2 class="titulo-prod-card">Pulsera mariposas</h2>
-      <p class="precio-prod-card">$12.000</p>
-      <img src="./imagenes/img-20.jpg" alt="" class="img-prod-card">
-      <button class="btn-info">Más información</button>
-    </div>
-    <div class="card-back">
-      <p class="info-detalle">
-        Acero blanco.
-      </p>
-      <button class="btn-volver">Volver</button>
-    </div>
-  </div>
-</div>
-
 <div class="card-producto" data-category="Collares">
   <div class="card-inner">
     <div class="card-front">
       <h2 class="titulo-prod-card">Collar dije serpiente con brillo</h2>
-      <p class="precio-prod-card">$13.000</p>
       <img src="./imagenes/img-21.jpg" alt="" class="img-prod-card">
+      <p class="precio-prod-card">$13.000</p>
       <button class="btn-info">Más información</button>
     </div>
     <div class="card-back">
@@ -412,8 +348,8 @@
   <div class="card-inner">
     <div class="card-front">
       <h2 class="titulo-prod-card">Collar con dije giratorio</h2>
-      <p class="precio-prod-card">$13.000</p>
       <img src="./imagenes/img-22.jpg" alt="" class="img-prod-card">
+      <p class="precio-prod-card">$13.000</p>
       <button class="btn-info">Más información</button>
     </div>
     <div class="card-back">
@@ -438,8 +374,8 @@
   <div class="card-inner">
     <div class="card-front">
       <h2 class="titulo-prod-card">Collar con dije susanito</h2>
-      <p class="precio-prod-card">$9.000</p>
       <img src="./imagenes/img-23.jpg" alt="" class="img-prod-card">
+      <p class="precio-prod-card">$9.000</p>
       <button class="btn-info">Más información</button>
     </div>
     <div class="card-back">
@@ -523,6 +459,29 @@
       dropdown.classList.remove('active');
     }
   });
+
+  // Mostrar imagen en modal al hacer click
+  const modal = document.getElementById("image-modal");
+  const modalImg = document.getElementById("modal-img");
+  const closeBtn = document.querySelector(".close-btn");
+
+  document.querySelectorAll(".img-prod-card").forEach(img => {
+    img.addEventListener("click", () => {
+      modal.style.display = "block";
+      modalImg.src = img.src;
+    });
+  });
+
+  closeBtn.onclick = function () {
+    modal.style.display = "none";
+  };
+
+  // También cerrar al hacer click fuera de la imagen
+  modal.onclick = function (e) {
+    if (e.target === modal) {
+      modal.style.display = "none";
+    }
+  };
 
   // Filtrar productos por categoría
   const filtroBtns = document.querySelectorAll('.filtro-btn');
