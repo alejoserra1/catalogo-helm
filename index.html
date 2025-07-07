@@ -388,6 +388,32 @@
   </div>
 </div>
 
+<div class="card-producto" data-category="Collares">
+  <div class="card-inner">
+    <div class="card-front">
+      <h2 class="titulo-prod-card">Collares con dije de trebol</h2>
+      <div class="carousel-container">
+        <button class="carousel-prev"><i class="fas fa-chevron-left"></i></button>
+        <div class="carousel-images">
+          <img src="./imagenes/img-24.jpg" class="img-prod-card carousel-img active" alt="Imagen 1">
+          <img src="./imagenes/img-25.jpg" class="img-prod-card carousel-img" alt="Imagen 2">
+          <img src="./imagenes/img-26.jpg" class="img-prod-card carousel-img" alt="Imagen 3">
+        </div>
+        <button class="carousel-next"><i class="fas fa-chevron-right"></i></button>
+      </div>
+      <p class="precio-prod-card">$12.000</p>
+      <button class="btn-info">Más información</button>
+    </div>
+    <div class="card-back">
+      <p class="info-detalle">
+        Acero quirúrgico / Acero dorado.
+      </p>
+      <button class="btn-volver">Volver</button>
+    </div>
+  </div>
+</div>
+
+
 
 </div>
 </div>
@@ -461,6 +487,35 @@
     }
   });
 
+  document.querySelectorAll('.card-producto').forEach(card => {
+  const images = card.querySelectorAll('.carousel-img');
+  const prev = card.querySelector('.carousel-prev');
+  const next = card.querySelector('.carousel-next');
+
+  if (images.length > 0 && prev && next) {
+    let currentIndex = 0;
+
+    const showImage = (index) => {
+      images.forEach((img, i) => {
+        img.classList.toggle('active', i === index);
+      });
+    };
+
+    prev.addEventListener('click', () => {
+      currentIndex = (currentIndex - 1 + images.length) % images.length;
+      showImage(currentIndex);
+    });
+
+    next.addEventListener('click', () => {
+      currentIndex = (currentIndex + 1) % images.length;
+      showImage(currentIndex);
+    });
+
+    // Inicializar
+    showImage(currentIndex);
+  }
+});
+  
   // Mostrar imagen en modal al hacer click
   const modal = document.getElementById("image-modal");
   const modalImg = document.getElementById("modal-img");

@@ -125,9 +125,6 @@ box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 
 }
 
 
-.card-front:hover .precio-prod-card {
-    transform: scale(1.05);
-}
 
 .img-prod-card {
     height: 180px;
@@ -139,9 +136,6 @@ box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 
     transition: transform 0.3s ease;
 }
 
-.card-front:hover .img-prod-card {
-    transform: scale(1.05);
-}
 
 /* --- Botones sobrios --- */
 .btn-info,
@@ -366,4 +360,49 @@ box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 
 @keyframes fadeIn {
   from {opacity: 0;}
   to {opacity: 1;}
+}
+
+.carousel-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.carousel-images {
+  display: flex;
+  justify-content: center;
+  transition: transform 0.5s ease;
+  width: 100%;
+}
+
+.carousel-img {
+  width: 180px;
+  display: none;
+  border-radius: 8px;
+}
+
+.carousel-img.active {
+  display: block;
+}
+
+.carousel-prev,
+.carousel-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255, 255, 255, 0.7);
+  border: none;
+  cursor: pointer;
+  padding: 5px 10px;
+  font-size: 1rem;
+  z-index: 2;
+  border-radius: 50%;
+}
+
+.carousel-prev {
+  left: 5px;
+}
+
+.carousel-next {
+  right: 5px;
 }
