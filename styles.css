@@ -389,6 +389,7 @@ box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 
 .carousel-next {
   position: absolute;
   top: 50%;
+  color: #000;
   transform: translateY(-50%);
   background: rgba(255, 255, 255, 0.7);
   border: none;
