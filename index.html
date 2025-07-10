@@ -42,12 +42,13 @@
     <h2 class="prod-stock">Productos en stock inmediato</h2>
     
   <div class="filtro-dropdown">
-  <button class="dropdown-toggle">Filtrar por categoría ▾</button>
+  <button class="dropdown-toggle"><span class="dropdown-toggle categoria-actual">Todos</span> ▾</button>
   <div class="dropdown-menu">
     <button class="filtro-btn" data-filter="Todos">Todos</button>
+    <button class="filtro-btn" data-filter="Anillos">Anillos</button>
     <button class="filtro-btn" data-filter="Aros">Aros</button>
-    <button class="filtro-btn" data-filter="Pulseras">Pulseras</button>
     <button class="filtro-btn" data-filter="Collares">Collares</button>
+    <button class="filtro-btn" data-filter="Pulseras">Pulseras</button>
   </div>
 </div>
 
@@ -127,23 +128,6 @@
       <h2 class="titulo-prod-card">Pulsera con dije diamante</h2>
       <img src="./imagenes/img-6.jpg" alt="" class="img-prod-card">
       <p class="precio-prod-card">$9.200</p>
-      <button class="btn-info">Más información</button>
-    </div>
-    <div class="card-back">
-      <p class="info-detalle">
-        Acero blanco.
-      </p>
-      <button class="btn-volver">Volver</button>
-    </div>
-  </div>
-</div>
-
-<div class="card-producto" data-category="Pulseras">
-  <div class="card-inner">
-    <div class="card-front">
-      <h2 class="titulo-prod-card">Pulsera doble cadena con esfera</h2>
-      <img src="./imagenes/img-7.jpg" alt="" class="img-prod-card">
-      <p class="precio-prod-card">$7.500</p>
       <button class="btn-info">Más información</button>
     </div>
     <div class="card-back">
@@ -416,7 +400,16 @@
 
 
 </div>
+<div id="mensaje-sin-productos" class="mensaje-sin-productos" style="display: none;">
+  <div class="mensaje-contenido">
+    <i class="fas fa-box-open icono-cartel"></i>
+    <p>No hay productos disponibles en esta categoría.</p>
+  </div>
 </div>
+
+
+</div>
+
 <footer class="footer">
   <div class="footer-container">
     <div class="footer-section">
@@ -541,24 +534,40 @@
 
   // Filtrar productos por categoría
   const filtroBtns = document.querySelectorAll('.filtro-btn');
-  const productos = document.querySelectorAll('.card-producto');
+const productos = document.querySelectorAll('.card-producto');
+const categoriaActual = document.querySelector('.categoria-actual');
 
-  filtroBtns.forEach(btn => {
-    btn.addEventListener('click', () => {
-      const filtro = btn.getAttribute('data-filter');
-      productos.forEach(producto => {
-        const categoria = producto.getAttribute('data-category');
-        if (filtro === 'Todos' || categoria === filtro) {
-          producto.style.display = 'block';
-        } else {
-          producto.style.display = 'none';
-        }
-      });
+filtroBtns.forEach(btn => {
+  btn.addEventListener('click', () => {
+    const filtro = btn.getAttribute('data-filter');
+    let hayProductos = false;
 
-      // Cerrar el menú después de seleccionar
-      dropdown.classList.remove('active');
+    // Mostrar/ocultar productos
+    productos.forEach(producto => {
+      const categoria = producto.getAttribute('data-category');
+      if (filtro === 'Todos' || categoria === filtro) {
+        producto.style.display = 'block';
+        hayProductos = true;
+      } else {
+        producto.style.display = 'none';
+      }
     });
+
+    // Mostrar u ocultar el mensaje si no hay productos
+    const mensaje = document.getElementById('mensaje-sin-productos');
+    mensaje.style.display = hayProductos ? 'none' : 'flex';
+
+    // Cambiar el texto del botón al filtro actual
+    categoriaActual.textContent = filtro;
+
+    // Cerrar el dropdown
+    dropdown.classList.remove('active');
   });
+});
+
+
+
+
 </script>
 
 
